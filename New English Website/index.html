@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Solar Roadways</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/index.css" media="all">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/aboutDropdown.css">
+		<script type="text/javascript" src="scripts/index.js"></script>
+		<script type="text/javascript" src="scripts/responsiveTopNav.js"></script>
+		<script type="text/javascript" src="scripts/aboutDropdown.js"></script>
+		<a class="top"></a>
+	</head>
+
+    <body class="flex-main">
+		<!--Navigation to other pages-->
+		<div class="topnav" id="TopNav">
+			<a href="index.html" class="active">Home</a>
+			<!--About dropdown menu-->
+			<div class="dropdown">
+                <button class="dropbtn" onclick="aboutDropdown()">About
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div id="aboutDropdown" class="about-content">
+                    <a href="pages/about.html">Summary</a>
+                </div>
+            </div>
+			<a href="pages/techinfo.html">Technical information</a>
+			<a href="pages/images.html">Images</a>
+			<a href="pages/contact.html">Contact</a>
+			<a href="javascript:void(0);" class="icon" onclick="responsiveTopNav()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+     
+        <div class="content"> <!--Div of all divs-->
+            <div class="title">
+                <h1>Welcome to Solar Roadways!</h1>
+            </div>
+       
+            <!--Very short to catch readers interest-->
+            <div class="intro" id="intro">
+                <h3>This is our page explaining a project we are helping with<br>It is now that you have time to click off</h3>
+                <p>In short, the project is about making our roads into a power source! The idea is to make roads of solar panels.</p>
+                <p>For a sustainable future, we firmly work on solving the issues that will come with it.</p>
+				<p><b>Notice:</b>The images section does not function well on small screens.</p>
+			</div>
+         
+            <button class="button" type="button" onclick="button()">Continue</button>
+        
+            <p class="nobutton">If the bottom doesn't show, press the about section, in the menu, at the top!</p>
+        </div>
+	</body>
+</html>
